@@ -1,3 +1,41 @@
 footer {
-    bottom: 0;
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-size: 0.8em;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: bottom;
+    padding: 20px 0px;
+
+}
+
+.footerlist {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    
+}
+
+.foot-item {
+    padding: 10px 30px;
+
+}
+
+#copy {
+    position: right;
+}
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    align-content: center;
+
+}
+
+footer a:hover {
+    color: #000000;
 }
