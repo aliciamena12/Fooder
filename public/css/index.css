@@ -1,0 +1,34 @@
+
+body {
+    background-color: #fa887d;
+    color: #ffffff;
+    font-size: 1.2em;
+    font-family: 'Raleway', sans-serif;
+}
+
+main {
+    text-align: center;
+    /* border: 10px solid black; */
+    margin: 10px 0px;
+    position: relative;
+    height: 400px;
+
+}
+
+.pagename {
+    font-family: 'Kaushan Script', cursive;
+    padding-top: 20px;
+    font-size: 3em;
+}
+.subtitle {
+    font-size: 1em;
+    font-weight: 200;
+    font-style: italic;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+img {
+    width: 50%;
+    padding: 0px;
+}
