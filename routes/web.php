@@ -1,8 +1,12 @@
 <?php
 
+use Illuminate\Auth\Events;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\UserController;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,10 +28,17 @@ use App\Http\Controllers\LoginController;
 
 Route::view('/', 'index');
 Route::view('/index', 'index');
-
 Route::view('login', 'login')->name('login')->middleware('guest');
 Route::view('dashboard', 'dashboard')->middleware('auth');
-Route::put('login', [LoginController::class, 'logout'])->middleware('auth');
-// Route::view('register', 'register');
 
 Route::post('login', [LoginController::class, 'login']);
+Route::post('logout', [LoginController::class, 'logout'])->name('logout')->middleware('auth');
+
+// Route::post('logout', function(){
+//     Auth::logout();
+//     return view('index');
+// })->name('logout')->middleware('auth');
+
+
+Route::view('signup', 'signup');
+Route::post('signup', [UserController::class, 'store'])->name('signup');
