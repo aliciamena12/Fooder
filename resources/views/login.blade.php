@@ -37,7 +37,7 @@
                 <button class="button-login" type="submit">Login</button>
 
                 <p>Don't have an account?</p>
-                <a class="signup" href="/register">Sign up</a>
+                <a class="signup" href="/signup">Sign up</a>
             </form>
         </main>
         @include('modules.footer')
