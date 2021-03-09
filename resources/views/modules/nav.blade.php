@@ -18,7 +18,10 @@
                 <a class="navlink" href="/dashboard">Dashboard</a>
             </li>
             <li class="nav-item">
-                <a class="navlink" href="/login">Logout</a>
+                <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                    @csrf
+                    <button type="sumbit">Logout</button>
+                </form>
             </li>
             @endguest
         </ul>
