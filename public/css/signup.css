@@ -1,0 +1,62 @@
+
+body {
+    background-color: #fa887d;
+    color: #ffffff;
+    font-size: 1.2em;
+    width: 100%;
+}
+
+main {
+    text-align: center;
+    /* border: 10px solid black; */
+    margin: 10px 0px;
+}
+
+.pagename {
+    font-family: 'Kaushan Script', cursive;
+    padding-top: 20px;
+    font-size: 3em;
+}
+.subtitle {
+    font-size: 1.8em;
+    font-weight: 200;
+    font-style: italic;
+    font-family: 'Raleway', sans-serif;
+}
+label {
+    margin: 20px 0px 0px 0px;
+    width: 80%;
+}
+
+.formtext {
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: #ffffff33;
+    color: #ffffff;
+    width: 80%
+}
+
+.formtext::placeholder {
+    color:#ffffff
+}
+
+button {
+    background-color: #ffffff;
+    margin: 10px 0px;
+    padding: 2px 70px;
+    border-radius: 45px;
+    color: #fa887d;
+    font-weight: bolder;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+p {
+    margin: 0px;
+}
+
+.signup {
+   text-decoration: none;
+   font-weight: bolder;
+   color: #ffffff;
+   border-bottom: 2px solid #ffffff;
+}
